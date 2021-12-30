@@ -1,0 +1,117 @@
+<div class="container">
+    <p class="text-primary"><b><ul> You are using <%= theme %> theme</ul></b></p>
+    <form action="/resume-maker" class="text-primary form" method="POST" >
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="">Full Name</label>
+                <input type="text" name="name" placeholder="Full Name" class="form-control">
+            </div>
+            
+            <div class="col-md-4 mb-3">
+                <label for="">Phone Number</label>
+                <input type="text" name="phone" placeholder="Number" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">E-mail</label>
+                <input type="text" name="email" placeholder="Eg.abcd@gmail.com" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">Address</label>
+                <textarea class="form-control" name="address" placeholder="ADDRESS" id="" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="">Father's name</label>
+                <input type="text" name="f_name" placeholder="Father Name" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">Mother's Name</label>
+                <input type="text" name="m_name" placeholder="Mother Name" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">Date of Birth</label>
+                <input type="date" name="birth" placeholder="Eg.02/02/2002" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">About me</label>
+            <textarea class="form-control" name="about" placeholder="Describe about Yourself" id="" rows="2"></textarea>
+        </div>
+        <h4>Eductional Qualification</h4>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="">Year of passing DEGREE</label>
+                <input type="number" name="degree" placeholder="Eg.2010" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">College Name</label>
+                <input type="text" name="clgname" placeholder="College Name" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">CGPA</label>
+                <input type="number" name="d_cgpa" step="0.01" placeholder="Eg. 8.91" class="form-control">
+            </div>
+
+
+            <div class="col-md-4 mb-3">
+                <label for="">Year of passing HSC</label>
+                <input type="number" name="hsc" placeholder="Eg.2008" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">School Name</label>
+                <input type="text" name="hscname" placeholder="School Name" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">CGPA</label>
+                <input type="number" name="h_cgpa" step="0.01" placeholder="Eg. 8.12" class="form-control">
+            </div>  
+
+
+            <div class="col-md-4 mb-3">
+                <label for="">Year of passing SSLC</label>
+                <input type="number" name="sslc" placeholder="Eg. 2006" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">School Name</label>
+                <input type="text" name="sslcname" placeholder="School Name" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">CGPA</label>
+                <input type="number" name="s_cgpa" step="0.01" placeholder="Eg. 8.12" class="form-control">
+            </div>
+        </div>
+        <h4>Expertise Area</h4>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="">Expertised Positions 1 </label>
+                <input type="text" name="exp_1" placeholder="Software Developer" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">Expertised Positions 2</label>
+                <input type="text" name="exp_2" placeholder="Data Scientist" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">Expertised Positions 3</label>
+                <input type="text" name="exp_3" placeholder="devops Engineer" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="">Technical Skills</label>
+            <input type="text" placeholder="Eg. html,css.." name="skill" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Interest</label>
+            <input type="text" placeholder="Eg. Writing, Reading.." name="hobbie" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <select name="theme" id="" hidden>
+                <option value="<%= theme %>"><%= theme %></option>
+            </select>            
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
